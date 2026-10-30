@@ -83,7 +83,7 @@ html[data-theme="dark"]{color-scheme:dark;--bg:#111a17;--paper:#17221e;--ink:#ee
   }
   .hero-copy{padding-top:190px}
   .mobile-dev-panel{
-    display:block;
+    display:block!important;
     margin:-4px 0 22px;
     padding:14px 15px 12px;
     color:var(--dark-ink);
