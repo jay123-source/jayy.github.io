@@ -84,6 +84,8 @@ html[data-theme="dark"]{color-scheme:dark;--bg:#111a17;--paper:#17221e;--ink:#ee
 .whatsapp-link{display:inline-flex;align-items:center;gap:6px}
 .whatsapp-icon{width:19px;height:19px;flex:0 0 19px;transition:transform .2s ease}
 .whatsapp-link:hover .whatsapp-icon{transform:scale(1.12)}
+.contact-row a{display:inline-flex;align-items:center;gap:8px}
+.contact-icon{display:block;width:18px;height:18px;flex:0 0 18px}
 /* Mobile hero focus and additional motion; desktop styles are otherwise unchanged. */
 @media(max-width:640px){
   .hero{padding-top:38px}
