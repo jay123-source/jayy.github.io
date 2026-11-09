@@ -170,3 +170,18 @@ html[data-theme="dark"]{color-scheme:dark;--bg:#111a17;--paper:#17221e;--ink:#ee
 @keyframes caret-blink{to{visibility:hidden}}
 @keyframes dev-mark-pulse{0%,100%{text-shadow:0 0 0 transparent}50%{text-shadow:0 0 13px #9dd0b8a6}}
 @media(prefers-reduced-motion:reduce){.art-core::after,.scroll-line::after,.mobile-dev-panel,.mobile-dev-mark,.mobile-dev-status,.dev-typing,.dev-caret{animation:none!important}.dev-typing{width:auto!important}.js .reveal .timeline-item,.js .reveal .skill-group,.js .reveal .education-card,.js .reveal .about-facts>div{opacity:1!important;transform:none!important}}
+
+/* Use the site's accent green for these large surfaces in light mode. */
+:root{--contact-surface:var(--accent);--contact-muted:#e3f1ea;--contact-highlight:#dceee8;--contact-rule:#ffffff55;--panel-code:#e3f1ea}
+.contact-section{background:var(--contact-surface)}
+.contact-copy .eyebrow,.contact-copy h2 em{color:var(--contact-highlight)}
+.contact-copy>p:not(.eyebrow){color:var(--contact-muted)}
+.contact-details,.contact-row{border-color:var(--contact-rule)}
+.contact-row span{color:var(--contact-muted)}
+.mobile-dev-panel{background:var(--contact-surface);border-color:var(--contact-rule)}
+.mobile-dev-mark{color:var(--contact-highlight)}
+.mobile-dev-label small{color:var(--contact-muted)}
+.mobile-dev-code{border-color:var(--contact-rule);color:var(--panel-code)}
+.dev-prompt{color:var(--contact-highlight)}
+html[data-theme="dark"]{--contact-surface:var(--dark);--contact-muted:#b5c4bc;--contact-highlight:#9dd0b8;--contact-rule:#36544a;--panel-code:#b7d8c5}
+@media(prefers-color-scheme:dark){html:not([data-theme="light"]){--contact-surface:var(--dark);--contact-muted:#b5c4bc;--contact-highlight:#9dd0b8;--contact-rule:#36544a;--panel-code:#b7d8c5}}
